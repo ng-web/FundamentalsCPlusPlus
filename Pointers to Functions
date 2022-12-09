@@ -1,0 +1,33 @@
+#include <iostream>
+
+using namespace std;
+
+
+/* Pointers & References
+ * Passing Values to Functions: Number Swap Program
+*/
+
+//function declaration
+//void numSwap(int &num1, int &num2);
+void numSwap(int*, int*);
+
+int main()
+{
+    int x = 10;
+    int y = 5;
+
+    cout << "Numbers before swap:\n";
+    cout << "x = " << x << endl;
+    cout << "y = " << y << endl;
+
+    //call swap function
+    //numSwap(x, y); //function using dereference
+
+    numSwap(&x, &y);
+
+    cout << "\nNumbers after swap:\n";
+    cout << "x = " << x << endl;
+    cout << "y = " << y << endl;
+
+    return 0;
+}
