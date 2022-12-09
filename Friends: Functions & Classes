@@ -37,3 +37,34 @@ int main()
 
     return 0;
 }
+
+
+/* Friends: Classes
+**
+
+class A{
+private:
+    int data;
+public:
+    A() : data(3) { } //default func
+    friend class B;
+};
+
+class B{
+public:
+    void friendFunc1(A aObj) { cout << "\nData value = " << aObj.data; }
+    void square(A aObj) { cout << "\nThe square is: " << aObj.data * aObj.data; }
+};
+
+
+int main()
+{
+    A aObj;
+    B bObj;
+
+    bObj.friendFunc1(aObj);
+    bObj.square(aObj);
+
+    return 0;
+}
+*/
