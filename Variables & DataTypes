@@ -1,0 +1,28 @@
+#include <iostream>
+
+using namespace std;
+
+/* Variables & DataTypes
+ *
+*/
+
+int main()
+{
+    int myInt = 4;
+    float myFloat = 10.32F;
+    double price = 21.99;
+    char myChar = 'A';
+    string myString = "We are learning to code with C++!";
+    bool boolVal = true;
+    auto unknown = 6.04;
+
+    cout << myInt << endl;
+    cout << myFloat << endl;
+    cout << price << endl;
+    cout << myChar << endl;
+    cout << myString << endl;
+    cout << boolVal << endl;
+    cout << unknown << endl;
+
+    return 0;
+}
